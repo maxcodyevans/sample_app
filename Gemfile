@@ -1,6 +1,8 @@
 
 source 'http://rubygems.org'
 
+gem 'rails_12factor', group: :production
+
 gem 'acts-as-taggable-on', '3.4.3'
 
 gem 'gravatar_image_tag', '0.1.0'
