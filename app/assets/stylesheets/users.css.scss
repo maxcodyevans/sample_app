@@ -1,0 +1,149 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+  
+.container {
+width: 1010px;
+}
+body {
+background: #E7E7E7;  
+//background-image: url("bg2.jpg");
+//background-repeat: repeat-y repeat-x;
+}
+
+header {
+margin-top: -100px; 
+height: 100px;
+}
+header img {
+padding: 1em;
+background: #fff;
+}
+section {
+margin-top: 1em;
+font-size: 120%;
+padding: 20px;
+background: #fff;
+}
+section h1 {
+font-size: 200%;
+}
+/* Links */
+a {
+color: #b6b6b6;
+text-decoration: none;
+}
+a:hover {
+color: #74c676;
+text-decoration: underline;
+}
+a:visited {
+color: #b6b6b6;
+}
+
+/* Navigation */
+nav {
+float: right;
+}
+nav {
+//background-color: white;
+padding: 0 0.7em;
+white-space: nowrap;
+}
+nav ul {
+margin: 0;
+padding: 0;
+}
+nav ul li {
+list-style-type: none;
+display: inline-block;
+padding: 0.2em 0;
+font-size: 13px;
+line-height: 22px;
+}
+nav ul li a {
+padding: 0 5px;
+font-weight: bold;
+width: 190px;
+color: #74c676;
+font-size: 150%;
+font-weight: normal;
+padding: 20px;
+}
+nav ul li a:visited {
+color: #b6b6b6;
+}
+nav ul li a:hover {
+  color: #74c676;
+text-decoration: underline;
+}
+/* Sign up button */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+
+
+a.signup_button {
+margin-left: auto;
+margin-right: auto;
+display: block;
+text-align: center;
+width: 190px;
+color: #fff;
+background: #006400;
+font-size: 150%;
+font-weight: bold;
+padding: 20px;
+}
+
+/* Round corners */
+.round {
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+.mainround
+{
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+background-image: url("clouds1.png");
+background-repeat: repeat-y repeat-x;
+-moz-box-shadow: 0 0 5px #888;
+-webkit-box-shadow: 0 0 5px#888;
+box-shadow: 0 0 5px #888;
+ display: block;
+  overflow: auto;
+  min-height: 100%;
+  height: 100%;
+  height: auto;
+}
+
+.pictureround {
+padding: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+border-radius: 2px;
+-moz-box-shadow: 5px 5px 5px #888;
+-webkit-box-shadow: 5px 5px 5px#888;
+box-shadow: 5px 5px 5px #888;
+}
+
+
+footer {
+text-align: center;
+margin-top: 10px;
+width: 710px;
+margin-left: auto;
+margin-right: auto;
+}
+footer nav {
+float: none;
+}

@@ -1,0 +1,19 @@
+  <div class="column span-6">
+    <div>
+      <h1>
+      	<%= @user.name %></br>
+        <%= gravatar_for @user, size:200 %>
+        </br>
+      <a href="http://gravatar.com/emails" target=_blank>change</a>
+      </h1>
+    </div>
+  </div>
+  
+ <div class="column span-11 last">
+<%= render 'form' %>
+<%= render 'microposts/micropost_form' %>
+</div>
+
+<div class="column span-24">
+<%= link_to 'Back', @user %> 
+</div>

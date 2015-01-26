@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SampleApp</title>
+ <%= csrf_meta_tag %>
+<%= render 'layouts/stylesheets' %>
+</head>
+<body>
+	<div style="width:100%; height:100px; background: #FBFBFB;">
+			
+	</div>
+
+<div class="container">
+<div class="header">
+			<%= render 'layouts/header' %>
+			</div>
+<section class="mainround">
+<%= yield %>
+</section>
+<%= render 'layouts/footer' %>
+</div>
+</body>
+</html>
