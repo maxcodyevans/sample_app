@@ -7,7 +7,11 @@ class MicropostsController < ApplicationController
   # GET /microposts
   # GET /microposts.json
   def index
-    @microposts = Micropost.all
+  #  if params[:user_id]
+  #   @microposts = Micropost.find(params[:user_id])
+  #  else
+      @microposts = Micropost.all
+  #  end
   end
 
   # GET /microposts/1
@@ -18,7 +22,7 @@ class MicropostsController < ApplicationController
   
   #testing
   def home
-    #@micropost = Micropost.all
+    @micropost = Micropost.all
   end
 
   # GET /microposts/new
@@ -38,7 +42,7 @@ class MicropostsController < ApplicationController
 
     respond_to do |format|
       if @micropost.save
-        format.html { redirect_to current_user, notice: 'Micropost was successfully created.' }
+        format.html { redirect_to users_path, notice: 'Micropost was successfully created.' }
         format.json { render :show, status: :created, location: @micropost }
       else
         format.html { render :new }

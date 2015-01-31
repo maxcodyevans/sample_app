@@ -7,17 +7,21 @@ Rails.application.routes.draw do
 
 
 
- match '/contact', :to => 'users#contact',  via: 'get'
- match '/about', :to => 'users#about', via: 'get'
- match '/help', :to => 'users#help',   via: 'get'
+
+  get 'home/:tag', to: 'users#home', as: :tag
+ 
+
  match '/new', :to => 'users#new',          via: 'get'
- match '/index', :to => 'users#index',          via: 'get'
-  match '/new',  to: 'users#new',            via: 'get'
-  match '/login',  to: 'sessions#new',         via: 'get'
+
+ match '/home', :to => 'users#home',          via: 'get'
+  
+  match '/login',  to: 'sessions#create',         via: 'post'
+ 
   match '/logout', to: 'sessions#destroy',     via: 'delete'
 
+
   
-  match '/post', :to => 'micropost#index',          via: 'get'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -25,7 +29,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-   root 'users#home'
+   root 'users#landing'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

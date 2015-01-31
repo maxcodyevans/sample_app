@@ -2,30 +2,29 @@
 
 <% provide(:title, @user.name) %>
   
-  <aside class="column span-6">
-    <div>
+  <div class="large-5  columns">
       <h1>
       	<%= @user.name %></br>
        <%= gravatar_for @user, size:200 %>
         
       </h1>
     </div>
-  </aside>
+ 
   
-<div class="column span-11 last">
+<div class="large-7  columns">
 
 <p>
   <strong>Tags:</strong>
   <%= @user.tag_list%>
 </p>
+
     <% if @user.microposts.any? %>
       <h3>Details</h3>
-      <ol class="microposts">
+      <div class="microposts">
         <%= render @microposts %>
-      </ol>
+      </div>
       <%= will_paginate @microposts %>
-    <% end %>
- 
+    <% end %> 
       
  </div>
  <div class="column span-24">

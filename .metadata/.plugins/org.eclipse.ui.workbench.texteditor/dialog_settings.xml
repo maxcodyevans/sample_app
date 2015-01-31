@@ -5,8 +5,14 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="wholeword"/>
-		<item value="list" key="selection"/>
+		<item value="carousel" key="selection"/>
 		<list key="findhistory">
+			<item value="carousel"/>
+			<item value="carousel-holder"/>
+			<item value="carousel-ho"/>
+			<item value="row"/>
+			<item value="h3"/>
+			<item value="table"/>
 			<item value="list"/>
 			<item value="media"/>
 		</list>

@@ -19,5 +19,6 @@ class User < ActiveRecord::Base
     # where(:title, query) -> This would return an exact match of the query
     where("tags like ?", "%#{query}%") 
   end
-                 
+  
+            
 end

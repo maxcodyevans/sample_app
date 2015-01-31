@@ -1,14 +1,14 @@
 class UsersController < ApplicationController
   
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:initialize, :show, :edit, :update, :destroy]
   
   before_action :logged_in_user, only: [:index, :edit, :update]
   
 #for when I close paths to select users
-  #before_action :correct_user,   only: [:edit, :update]
+ # before_action :correct_user,   only: [ :edit, :update]
   #before_action :admin_user,     only: :destroy
   
-  
+
   
   # GET /users
   # GET /users.json
@@ -17,7 +17,11 @@ class UsersController < ApplicationController
   end
   
   def home
+    if params[:tag]
+    @users = User.tagged_with(params[:tag]).paginate(page: params[:page], :per_page => 12)
+    else
     @users = User.paginate(page: params[:page], :per_page => 12)
+    end
   end
 
   # GET /users/1
@@ -91,14 +95,15 @@ class UsersController < ApplicationController
     def logged_in_user
       unless logged_in?
         flash[:danger] = "Please log in."
-        redirect_to login_url
+        redirect_to new_session_url
       end
     end
     
     # Confirms the correct user.
     def correct_user
       @user = User.find(params[:id])
-      redirect_to(root_url) unless @user == current_user
+   #   redirect_to(root_url) unless @user == current_user
+ #  redirect_to(root_url) unless @user == User.find(params["1"]) 
     end
 
 
