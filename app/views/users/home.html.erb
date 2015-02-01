@@ -2,7 +2,7 @@
 
 <div class="row">
               <div class="large-7 columns">
-                <img src="http://placehold.it/600x400&text=[Intro]"/>
+                 <%= link_to image_tag("blackboard.jpg"), home_path %>
               </div>
               <div class="large-5  columns">
                 
@@ -12,15 +12,36 @@
 
 		          	<ul>
 		          	
-							<li><%= link_to "Subject1", tag_path("math")  %></li>
-							<li><%= link_to "Subject2", tag_path("math")  %></li>
-					        <li><%= link_to "Subject3", tag_path("math")  %></li>
-					            </ul>
+							<li><%= link_to "Mate Basica", tag_path("mate")  %></li>
+							<li><%= link_to "Quimica", tag_path("quimica")  %></li>
+					        <li><%= link_to "English", tag_path("english")  %></li>
+					           </ul>
+					
 					<ul>
 
-				<li><%= link_to "Subject1", tag_path("math")  %></li>
-							<li><%= link_to "Subject2", tag_path("math")  %></li>
-					        <li><%= link_to "Subject3", tag_path("math")  %></li>
+				<li><%= link_to "Calculo", tag_path("Calculo")  %></li>
+							<li><%= link_to "Computacion", tag_path("computacion")  %></li>
+					        <li><%= link_to "Fisica", tag_path("fisica")  %></li>
+		          </ul>
+		          <ul>
+
+				<li><%= link_to "Mate Avanzada", tag_path("Calculo")  %></li>
+							<li><%= link_to "Musica", tag_path("computacion")  %></li>
+					        <li><%= link_to "Arte", tag_path("fisica")  %></li>
+		          </ul>
+		                </br>
+		          <ul>
+
+				<li><%= link_to "English", tag_path("Calculo")  %></li>
+							<li><%= link_to "English HL", tag_path("computacion")  %></li>
+					        <li><%= link_to "TOEFL", tag_path("fisica")  %></li>
+		          </ul>
+		          		                </br>
+		          <ul>
+
+				<li><%= link_to "GRE ", tag_path("Calculo")  %></li>
+							<li><%= link_to "GMAT ", tag_path("computacion")  %></li>
+					        <li><%= link_to "SAT I/II", tag_path("fisica")  %></li>
 		          </ul>
 		          </nav>
               </div>
@@ -32,11 +53,17 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-      	<td><section class="pictureround"><%= link_to gravatar_for( user, size:150), user %></section></td>
-        <td><%= user.name %></br> </br> I teach 
-        <%= raw user.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %> ... </td>
+       <td><section class="pictureround"><%= link_to gravatar_for( user, size:300), user %></section></td>
+        <td><%= user.name %></br> </br> 
+        	
+        	<h3><%= link_to image_tag("Thumbs_Up.png"), help_path %> 98% </h3>
+        	
+         </td>
+       
    		<% if user.microposts.any? %>
-    		 <td><%= user.microposts.first.content %></td>
+    		 <td>
+    		 	 Mis especialidades son: <%= raw user.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %> ... </br></br></br>
+    		 	<%= user.microposts.first.content %></td>
     	<% end %>
   
 

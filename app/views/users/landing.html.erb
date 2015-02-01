@@ -1,7 +1,7 @@
         <div class="row">
         <div class="large-12 columns">
         <div id="slider">
-          <img src="http://placehold.it/1000x400&text=[ Main Advert ]"/>
+          <%= link_to image_tag("collage.jpg"), home_path %>
         </div>
         
         <hr/>
@@ -12,18 +12,24 @@
      
       <div class="row">
         <div class="large-4 columns">
-          <img src="http://placehold.it/400x300&text=[Exec English/test prep/thesis]"/>
-          <h4>This is a content section.</h4>
+        	<h2><%= link_to "Post-Universitario", home_path  %></h2>
+          <%= link_to image_tag("business.jpg"), home_path %>
+            </br></br>
+          <h4>Mejora tu ingles, preparate para el TOEFL, el GMAT o el GRE para triunfar en tu carrera</h4>
         </div>
         
         <div class="large-4 columns">
-          <img src="http://placehold.it/400x300&text=[k-12 / college]"/>
-          <h4>This is a content section.</h4>
+        	<h2><%= link_to "Educacion General", home_path  %></h2>
+          <%= link_to image_tag("grad.jpg"), home_path %>
+         </br></br>
+          <h4>Desde Kinder hasta tu Graduacion, te podemos ayudar en todas las materias y a superar todos los obstaculos.</h4>
         </div>
         
         <div class="large-4 columns">
-          <img src="http://placehold.it/400x300&text=[sign in as profe add]"/>
-          <h4>This is a content section.</h4>
+        	<h2><%= link_to "Empleo", contact_path %></h2>
+          <%= link_to image_tag("work_with_us.jpg"), contact_path %>
+          </br></br>
+          <h4>Unete a nuestro equipo de tutores profesionales en Ecuador. Mandanos tu resume con una carta de aplicacion y nos pondremos en contacto!</h4>
         </div>
       
         </div>
