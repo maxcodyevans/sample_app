@@ -1,12 +1,12 @@
 
 
 <div class="row">
-              <div class="large-7 columns">
+              <div class="large-6 columns">
                  <%= link_to image_tag("blackboard.jpg"), home_path %>
               </div>
-              <div class="large-5  columns">
+              <div class="large-5 large-offset-1 columns">
                 
-                <div class="small-8 small-centered columns"><h2>Buscar materia</h2> </div>
+                <div class="small-8 small-offset-1  columns"><h2>Buscar materia</h2> </div>
                 
                  <nav class="round">
 
@@ -14,7 +14,7 @@
 		          	
 							<li><%= link_to "Mate Basica", tag_path("mate")  %></li>
 							<li><%= link_to "Quimica", tag_path("quimica")  %></li>
-					        <li><%= link_to "English", tag_path("english")  %></li>
+					        <li><%= link_to "Mate Int", tag_path("mate")  %></li>
 					           </ul>
 					
 					<ul>
@@ -25,23 +25,23 @@
 		          </ul>
 		          <ul>
 
-				<li><%= link_to "Mate Avanzada", tag_path("Calculo")  %></li>
-							<li><%= link_to "Musica", tag_path("computacion")  %></li>
-					        <li><%= link_to "Arte", tag_path("fisica")  %></li>
+				<li><%= link_to "Mate Avanzada", tag_path("mate")  %></li>
+							<li><%= link_to "Musica", tag_path("musica")  %></li>
+					        <li><%= link_to "Arte", tag_path("arte")  %></li>
 		          </ul>
 		                </br>
 		          <ul>
 
-				<li><%= link_to "English", tag_path("Calculo")  %></li>
-							<li><%= link_to "English HL", tag_path("computacion")  %></li>
-					        <li><%= link_to "TOEFL", tag_path("fisica")  %></li>
+				<li><%= link_to "English", tag_path("english")  %></li>
+							<li><%= link_to "English HL", tag_path("english")  %></li>
+					        <li><%= link_to "TOEFL", tag_path("TOEFL")  %></li>
 		          </ul>
 		          		                </br>
 		          <ul>
 
-				<li><%= link_to "GRE ", tag_path("Calculo")  %></li>
-							<li><%= link_to "GMAT ", tag_path("computacion")  %></li>
-					        <li><%= link_to "SAT I/II", tag_path("fisica")  %></li>
+				<li><%= link_to "GRE ", tag_path("GRE")  %></li>
+							<li><%= link_to "GMAT ", tag_path("GMAT")  %></li>
+					        <li><%= link_to "SAT I/II", tag_path("SAT")  %></li>
 		          </ul>
 		          </nav>
               </div>
@@ -53,15 +53,15 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-       <td><section class="pictureround"><%= link_to gravatar_for( user, size:300), user %></section></td>
+       <td><section class="pictureround"><%= link_to gravatar_for( user, size:200), user %></section></td>
         <td><%= user.name %></br> </br> 
         	
-        	<h3><%= link_to image_tag("Thumbs_Up.png"), help_path %> 98% </h3>
+        	<h3><%= link_to image_tag("Thumbs_Up.png"), help_path %> <%= user.grade %>% </h3>
         	
          </td>
        
    		<% if user.microposts.any? %>
-    		 <td>
+    		 <td width="70%">
     		 	 Mis especialidades son: <%= raw user.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %> ... </br></br></br>
     		 	<%= user.microposts.first.content %></td>
     	<% end %>

@@ -8,6 +8,9 @@
        <%= gravatar_for @user, size:200 %>
         
       </h1>
+      <%= link_to '<span class="fa fa-envelope"> Contacteme </span>'.html_safe, contact_path%><br>
+       <%= link_to '<span class="fa fa-phone"> (099)290-1112 </span>'.html_safe, "#"%>
+      
     </div>
  
   
@@ -27,7 +30,4 @@
     <% end %> 
       
  </div>
- <div class="column span-24">
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
-</div>
+

@@ -12,25 +12,31 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label :name %>
     <%= f.text_field :name %>
-  </div>
+  </div></br>
   <div class="field">
-    <%= f.label :email %><br>
+    <%= f.label :email %>
     <%= f.text_field :email %>
-  </div>
+  </div></br>
   <div class="field">
-<%= f.label :password %><br />
+<%= f.label :password %>
 <%= f.password_field :password %>
-</div>
+</div></br>
 <div class="field">
-<%= f.label :password_confirmation, "Confirmation" %><br />
+<%= f.label :password_confirmation, "Confirmation" %>
 <%= f.password_field :password_confirmation %>
-</div>
-<div class="field">
-<%= f.label :tag_list, "tag" %><br />
-<%= f.text_field :tag_list %>
+</div></br>
 
+<div class="field">	
+<%= f.label :tag_list, "lista especialidades" %>
+<%= f.text_field :tag_list %>
+<p> Separate by commas, tags utilisables son: mate, english, fisica, quimica, calculo, musica, arte, TOEFL, SAT, GRE, GMAT </p> 
+</div>
+</br>
+<div class="field">
+<%= f.label :grade, "nota/100" %>
+<%= f.text_field :grade %>
 </div>
   <div class="actions">
     <%= f.submit %>

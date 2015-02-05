@@ -1,6 +1,6 @@
 class MicropostsController < ApplicationController
   before_action :set_micropost, only: [:show, :edit, :update, :destroy, :home]
-  #before_action :signed_in_user, only: [:create, :destroy]
+  before_action :logged_in_user, only: [:edit, :update, :create, :destroy]
   #before_action :correct_user,   only: :destroy
 
 
@@ -27,7 +27,7 @@ class MicropostsController < ApplicationController
 
   # GET /microposts/new
   def new
-    @micropost = Micropost.new
+   @micropost = Micropost.new
   end
 
   # GET /microposts/1/edit
@@ -73,7 +73,7 @@ class MicropostsController < ApplicationController
     @micropost.destroy
     respond_to do |format|
       #redirects to current_user
-      format.html { redirect_to current_user, notice: 'Micropost was successfully destroyed.' }
+      format.html { redirect_to microposts_path, notice: 'Micropost was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -93,5 +93,14 @@ class MicropostsController < ApplicationController
       @micropost = current_user.microposts.find_by(id: params[:id])
       redirect_to root_url if @micropost.nil?
     end
+    
+    # Confirms a logged-in user.
+    def logged_in_user
+      unless logged_in?
+        flash[:danger] = "Please log in."
+        redirect_to new_session_url
+      end
+    end
+    
     
 end

@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
  match '/new', :to => 'users#new',          via: 'get'
  match '/home', :to => 'users#home',          via: 'get'
+  match '/work', :to => 'users#work',          via: 'get'
+  match '/about', :to => 'users#about',          via: 'get'
   match '/help', :to => 'users#help',          via: 'get'
   match '/contact', :to => 'users#contact',          via: 'get'
   match '/login',  to: 'sessions#create',         via: 'post'
