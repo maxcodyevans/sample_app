@@ -18,9 +18,9 @@ class UsersController < ApplicationController
   
   def home
     if params[:tag]
-    @users = User.tagged_with(params[:tag]).paginate(page: params[:page], :per_page => 12)
+    @users = User.order(grade: :desc).tagged_with(params[:tag]).paginate(page: params[:page], :per_page => 12)
     else
-    @users = User.paginate(page: params[:page], :per_page => 12)
+    @users = User.order(grade: :desc).paginate(page: params[:page], :per_page => 12)
     end
   end
 
