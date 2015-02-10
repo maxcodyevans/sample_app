@@ -254,3 +254,13 @@ content = "
                      
 user.microposts.create!(content: content)    
 
+user = User.create!(name:  "Celia A.",
+             email: "Celiav.acosta@gmail.com",
+             password:              "erudito123",
+             password_confirmation: "erudito123",
+             tag_list: "english, TOEFL",
+             grade: "94")
+  
+content = 
+"Hola, soy una Americana nacida en el estado de Virginia, de 23 años. Me considero responsable y comprometida con el avance de mis estudiantes. Tengo experiencia con niños de 8 a 15 años y adultos entre los 35. "
+user.microposts.create!(content: content) 
