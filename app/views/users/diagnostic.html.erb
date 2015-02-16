@@ -1,0 +1,28 @@
+<script>
+var count=25*60;
+var min=0;
+var secs=0;
+var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+
+function timer()
+{
+  count=count-1;
+  if (count <= 0)
+  {
+     clearInterval(counter);
+     	alert("Time is up! Go to the written section ");
+     return;
+  }
+  min = Math.floor( count / 60 ); 
+  secs = count % 60;
+  document.getElementById("timer").innerHTML= min +" minutos :"+ secs + " segundos"; 
+}
+</script>
+
+<div class="large-8 large-offset-1  columns">
+<h1>TOEFL Diagnostic Test </h1> 
+<h4>Tiempo restante: <span id="timer"> </span></h4>
+
+
+<iframe src="https://docs.google.com/forms/d/1FJJT3PhR3bpQQt1jT1MONVb9RwSXbOorXCBJYK5Iftc/viewform?embedded=true" width="760" height="620" align="center" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>

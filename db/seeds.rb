@@ -11,7 +11,7 @@ user = User.create!(name:  "Alexandra P.",
              email: "alepaez1216@hotmail.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "mate, english, mate avanzado, SAT, GRE, GMAT, TOEFL, tesis",
+             tag_list: "Mate, English, Mate avanzado, SAT, GRE, GMAT, TOEFL, Tesis",
              grade: "98")
   
 content = "Hi, I'm Alexandra. I have a B.A. in mathematics from San Diego State University, an M.Ed in Educational Psychology from the University of Southern California, and will have an Ed Doctorate in Educational Management from Capella University in 2016."
@@ -33,11 +33,12 @@ user = User.create!(name:  "Maximilian E.",
              email: "maxcodyevans@yahoo.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "mate, mate avanzado, english, SAT, GRE, GMAT, TOEFL",
+             tag_list: "SAT, GRE, GMAT",
              grade: "98")
   
-content = "Hola soy Max, estudie matematicas aplicadas en Harvard University, mi especialidad es algebra lineal computacional. Actualmente conduzco seminarios para el GRE y el GMAT, exlusivamente para aquellos entrando a programas de Maestria y PhD. Me estoy alistando
-mi MBA en Stanford y lanzando micro-negocios en-linea."             
+content = "Hi I'm Max, I studied applied math at Harvard. My specialty is business oriented linear algebra and I run GRE and GMAT seminars.
+I just went through the Graduate application process, will be attending Stanford Business School next year, and love to help those 
+going through the same hurdles."             
 user.microposts.create!(content: content) 
 
 content = "2014 Valdivia Group Founder ----  2013 Cum Laude Harvard University  ---- TA Applied Math 121 ----- Spanish Director HACIA"             
@@ -55,7 +56,7 @@ user = User.create!(name:  "Raúl G.",
              email: "raul.guerrero.chavez@gmail.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "mate, english, SAT, GRE, TOEFL",
+             tag_list: "Mate, English, SAT, GRE, TOEFL",
              grade: "96")
   
 content = "Hola soy Raúl, estudie en el exterior y me encanta compartir mis conocimientos con mis estudiantes. Dí las pruebas del TOEFL 2 veces.  En la primera tuve mejores calificaciones que el 97% de las personas que dieron la prueba ese día y la más reciente tuve una calificación de 108/120.
@@ -79,8 +80,8 @@ user = User.create!(name:  "Hernán G.",
              email: "hdgm.26@gmail.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "mate, mate avanzado, quimica, biologia, fisica",
-             grade: "96")
+             tag_list: "Mate, Mate avanzado, Quimica, Biologia, Fisica",
+             grade: "93")
   
 content = "Trato de mantener un relación amigable pero a la vez responsable con los alumnos, lo que genera confianza. Permitiéndome evaluar las necesidades individuales y así obtener el máximo rendimiento, aprovechando las fortalezas del estudiante apoyado con ejemplos prácticos en las diferentes asignaturas.
 Tratando de no alterar el sistema con el que trabajan los estudiantes procurando aclarar los vacíos que se van formando en las aulas de clase."
@@ -108,16 +109,22 @@ user = User.create!(name:  "Carmen C.",
              email: "carmen.coque@hotmail.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "English, TOEFL",
-             grade: "95")
+             tag_list: "English",
+             grade: "94")
   
-content = "Titulo de sicologia general de la universiada de Florida, USA. Titulo registrado en la SENECYT. He trabajado enseñando ingles desde el 2011 a niños, jovenes y adultos. En mi tiempo libre doy tutoria de ingles en la casa. Por ahora trabajo en la mañana en Unidad Educativa Bilingue Santo Domingo de Guzman."
-
+content = 
+"Hola, soy Carmen y tengo 37 años de edad. Vivi en USA 13 años y di clases de religion como voluntaria en la iglesia por 3 años. Disfruto de actividades al aire libre, correr, leer, mirar buenas peliculas en ingles. Tengo habilidad de mantener buenas relaciones personales con las personas y adaptabilidad a trabajar en differentes ambientes."
 user.microposts.create!(content: content) 
- 
-content = "Me gusta correr en mi tiempo libre, visitar lugares y disfrutar de actividades al aire libre."             
 
+content = 
+"MB en Sicologia general de la universidad de Florida USA.
+En Nicaragua di clases de ingles como voluntaria a niños y niñas de 10, 11, 12, 13 años de edad por 2 años.
+En Ecuador he trabajado como profesora de ingles de niños, adolescentes y adultos desde agosto del 2012.
+En Ecuador trabaje como sicologa de niños de EGB por un año, 2012-2013.
+Doy tutorias en casa a chicos de colegio y universidad.
+He tomado varios cursos impartidos por Cambridge en Ecuador."
 user.microposts.create!(content: content) 
+
 
 
 
@@ -125,7 +132,7 @@ user = User.create!(name:  "Nelson H.",
              email: "nhague14@gmail.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "mate, english, TOEFL, history",
+             tag_list: "Mate, English, TOEFL, History",
              grade: "95")
   
   
@@ -154,8 +161,8 @@ user = User.create!(name:  "Daniel M.",
              email: "danyboymc@gmail.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "mate, english, computacion",
-             grade: "94")
+             tag_list: "Mate, English, Computacion",
+             grade: "93")
   
 content = "Hola, cuento con experiencias dentro y fuera del país, que me ha permitido familiarizarme con temas referentes a los negocios, idiomas, servicio y muchos más.
 Soy un profesional confiable y responsable. Me gusta cumplir con mi trabajo. "
@@ -173,8 +180,8 @@ user = User.create!(name:  "Xavier C.",
              email: "xaviercreamer@hotmail.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "english, TOEFL",
-             grade: "94")
+             tag_list: "English, TOEFL",
+             grade: "95")
   
 content = "Tengo 9 años de experiencia enseñando inglés en la Universidad San Francisco de Quito, el American Junior College y en numerosas empresas multinacionales de Ecuador y España. "
 
@@ -189,8 +196,8 @@ user = User.create!(name:  "Michael A.",
              email: "mha_sal2@yahoo.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "english, biologia",
-             grade: "95")
+             tag_list: "English, Biologia",
+             grade: "93")
   
 content = "Naci en los Estados Unidos por lo tanto manejo un nivel nativo de Inglés. Mis hobbies son el deporte y la lectura."
 
@@ -230,7 +237,7 @@ user = User.create!(name:  "Paul E.",
              email: "Paulevansmd2@hotmail.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "english, TOEFL, SAT, GRE, GMAT",
+             tag_list: "English, TOEFL, SAT, GRE, GMAT",
              grade: "95")
   
 content = "Hi, Im Paul
@@ -258,9 +265,29 @@ user = User.create!(name:  "Celia A.",
              email: "Celiav.acosta@gmail.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "english, TOEFL",
-             grade: "94")
+             tag_list: "English, TOEFL",
+             grade: "96")
   
 content = 
 "Hola, soy una Americana nacida en el estado de Virginia, de 23 años. Me considero responsable y comprometida con el avance de mis estudiantes. Tengo experiencia con niños de 8 a 15 años y adultos entre los 35. "
 user.microposts.create!(content: content) 
+
+user = User.create!(name:  "Joanna V.",
+             email: "mrsjoannavega@icloud.com",
+             password:              "erudito123",
+             password_confirmation: "erudito123",
+             tag_list: "English, Mate, Biologia, TOEFL, SAT, GRE, GMAT",
+             grade: "95")
+  
+content = 
+"Una educadora Canadiense/Ecuatoriana con experiencia dispuesta a trabajar para lograr las metas propuestas."
+user.microposts.create!(content: content) 
+
+content = 
+"BA-Education                           Ryerson University Toronto, Canada ----
+BA-Ciencias Educacion             UTPL, Quito, Ecuador  ----
+MA-Multidisciplinary Studies      State Univerisity of New York   ----
+"
+user.microposts.create!(content: content) 
+
+

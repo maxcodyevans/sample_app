@@ -12,6 +12,7 @@ Rails.application.routes.draw do
  
 
  match '/new', :to => 'users#new',          via: 'get'
+  match '/diagnostic', :to => 'users#diagnostic',          via: 'get'
  match '/home', :to => 'users#home',          via: 'get'
   match '/work', :to => 'users#work',          via: 'get'
   match '/about', :to => 'users#about',          via: 'get'
