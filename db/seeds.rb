@@ -11,7 +11,7 @@ user = User.create!(name:  "Alexandra P.",
              email: "alepaez1216@hotmail.com",
              password:              "erudito123",
              password_confirmation: "erudito123",
-             tag_list: "Mate, English, Mate avanzado, SAT, GRE, GMAT, TOEFL, Tesis",
+             tag_list: "Mate, English, Mate Avanzado, SAT, GRE, GMAT, TOEFL, Tesis",
              grade: "98")
   
 content = "Hi, I'm Alexandra. I have a B.A. in mathematics from San Diego State University, an M.Ed in Educational Psychology from the University of Southern California, and will have an Ed Doctorate in Educational Management from Capella University in 2016."

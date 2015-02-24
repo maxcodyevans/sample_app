@@ -20,24 +20,31 @@
      
       <div class="row">
         <div class="large-4 columns">
-        	<h2><%= link_to '<span class="fa fa-graduation-cap"> Professional</span>'.html_safe, home_path  %></h2>
-          <%= link_to image_tag("business.jpg"), home_path %>
-            </br></br>
-          <h4>Mejora tu ingles, preparate para el TOEFL, el GMAT o el GRE para triunfar en tu carrera</h4>
+        	<h2><%= link_to '<span class="fa fa-graduation-cap"> GRE/GMAT </span>'.html_safe, gmat_path  %></h2>
+          <h4>The GMAT exam has been the test of choice by the world’s business leaders to get into the world’s leading business schools. <%= link_to '<span> learn more </span>'.html_safe, gmat_path  %><br><br>
+          	 The GRE is the most widely accepted standarized test for graduate admission in the United States and abroad. It's focus on Math, Vocabuly and Reading Comprehension make it a highly learnable test.<%= link_to '<span> learn more </span>'.html_safe, gre_path  %> 
+          </h4>
         </div>
         
         <div class="large-4 columns">
-        	<h2><%= link_to '<span class="fa fa-institution"> Educacion General</span>'.html_safe, home_path  %></h2>
-          <%= link_to image_tag("grad.jpg"), home_path %>
-         </br></br>
-          <h4>Desde Kinder hasta tu Graduacion, te podemos ayudar en todas las materias y a superar todos los obstaculos.</h4>
+        	<h2><%= link_to '<span class="fa fa-institution"> TOEFL</span>'.html_safe, home_path  %></h2>
+       
+        
+          <h4>TOEFL is is the most widely accepted English-language test in the world, including more than 9,000 colleges, universities, agencies and other institutions in 130 countries.<%= link_to '<span> learn more </span>'.html_safe, toefl_path  %> </br></br>
+          	
+          	We now offer a online diagnostic test, with immediate grading and feedback in our portal. To begin <%= link_to '<span> click here </span>'.html_safe, diagnostic_path  %> 
+          </h4>
         </div>
         
         <div class="large-4 columns">
-        	<h2><%= link_to '<span class="fa fa-desktop">  Empleo</span>'.html_safe, work_path %></h2>
-          <%= link_to image_tag("work_with_us.jpg"), work_path %>
-          </br></br>
-          <h4>Unete a nuestro equipo de tutores profesionales en Ecuador. Mandanos tu resume con una carta de aplicacion y nos pondremos en contacto!</h4>
+        	<h2><%= link_to '<span class="fa fa-desktop">  1-On-1 TUTOR</span>'.html_safe, work_path %></h2>
+         
+          
+          <h4>
+          	We offer 1-On-1 tutoring to complement our seminars and for K-12 needs. Please take a look at our wide and talented pool of professors <%= link_to '<span> here </span>'.html_safe, home_path  %>
+          	</br></br>
+          	
+          </h4>
         </div>
       
         </div>
@@ -51,7 +58,7 @@
                 
             <div class="row">
               <div class="large-9 columns">
-                <p>We'd love to hear from you, you attractive person you.</p>
+                <p>Mandanos un email a admin@erudito.guru o 095-918-4199</p>
               </div>
               <div class="large-3 columns">
               	<%= link_to '<span class="fa fa-envelope">  Contacto</span>'.html_safe, contact_path, :class => "radius button right" %>
