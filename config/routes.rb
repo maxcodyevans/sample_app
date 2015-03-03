@@ -16,6 +16,7 @@ Rails.application.routes.draw do
    match '/gremathdiagnostic', :to => 'users#gremathdiagnostic',          via: 'get'
     match '/toefl', :to => 'users#toefl',          via: 'get'
     match '/gre', :to => 'users#gre',          via: 'get'
+        match '/tutoring', :to => 'users#tutoring',          via: 'get'
     match '/gmat', :to => 'users#gmat',          via: 'get'
  match '/home', :to => 'users#home',          via: 'get'
   match '/work', :to => 'users#work',          via: 'get'

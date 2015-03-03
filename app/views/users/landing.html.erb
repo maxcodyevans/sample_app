@@ -44,17 +44,18 @@ window._fbq.push(['track', '6019370689145', {'value':'0.00','currency':'USD'}]);
         </div>
         
         <div class="large-4 columns">
+        
         	<h2><%= link_to '<span class="fa fa-institution"> TOEFL</span>'.html_safe, home_path  %></h2>
        
         
           <h4>TOEFL is is the most widely accepted English-language test in the world, including more than 9,000 colleges, universities, agencies and other institutions in 130 countries.<%= link_to '<span> learn more </span>'.html_safe, toefl_path  %> </br></br>
           	
-          	We now offer a online diagnostic test, with immediate grading and feedback in our portal. To begin <%= link_to '<span> click here </span>'.html_safe, diagnostic_path  %> 
-          </h4>
+          	</h4>
+          		<%= link_to image_tag("TOEFL_Logo.png"), diagnostic_path  %> 
         </div>
         
         <div class="large-4 columns">
-        	<h2><%= link_to '<span class="fa fa-desktop">  1-On-1 TUTOR</span>'.html_safe, work_path %></h2>
+        	<h2><%= link_to '<span class="fa fa-desktop">  1-On-1 TUTOR</span>'.html_safe, tutoring_path %></h2>
          
           
           <h4>
@@ -75,7 +76,7 @@ window._fbq.push(['track', '6019370689145', {'value':'0.00','currency':'USD'}]);
                 
             <div class="row">
               <div class="large-9 columns">
-                <p>Mandanos un email a admin@erudito.guru o 095-918-4199</p>
+                <p>Test Prep en Quito y Cumbaya. GMAT, GRE, SAT y TOEFL. Mandanos un email a admin@erudito.guru o 095-918-4199</p>
               </div>
               <div class="large-3 columns">
               	<%= link_to '<span class="fa fa-envelope">  Contacto</span>'.html_safe, contact_path, :class => "radius button right" %>
