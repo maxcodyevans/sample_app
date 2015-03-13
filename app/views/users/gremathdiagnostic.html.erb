@@ -9,8 +9,9 @@ function timer()
   count=count-1;
   if (count <= 0)
   {
-     clearInterval(counter);
+     
      	alert("Time is up!");
+     	count=25*60;
      return;
   }
   min = Math.floor( count / 60 ); 
