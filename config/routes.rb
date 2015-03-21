@@ -14,7 +14,7 @@ Rails.application.routes.draw do
  match '/new', :to => 'users#new',          via: 'get'
   match '/diagnostic', :to => 'users#diagnostic',          via: 'get'
    match '/gremathdiagnostic', :to => 'users#gremathdiagnostic',          via: 'get'
-    match '/gremathdiagnostic', :to => 'users#greverbaldiagnostic',          via: 'get'
+    match '/greverbaldiagnostic', :to => 'users#greverbaldiagnostic',          via: 'get'
    match '/toefldiagnostic', :to => 'users#toefldiagnostic',          via: 'get'
    match '/gmatmathdiagnostic', :to => 'users#gmatmathdiagnostic',          via: 'get'
     match '/toefl', :to => 'users#toefl',          via: 'get'
