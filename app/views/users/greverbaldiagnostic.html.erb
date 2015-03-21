@@ -1,0 +1,30 @@
+<script>
+var count=25*60;
+var min=0;
+var secs=0;
+var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+
+function timer()
+{
+  count=count-1;
+  if (count <= 0)
+  {
+     
+     	alert("Time is up!");
+     	count=25*60;
+     return;
+  }
+  min = Math.floor( count / 60 ); 
+  secs = count % 60;
+  document.getElementById("timer").innerHTML= min +" minutos :"+ secs + " segundos"; 
+}
+</script>
+
+<div class="large-8 large-offset-1  columns">
+<h1>GRE Verbal Diagnostic Test </h1>
+Looking for the TOEFL diagnostic? <%= link_to '<span> click here </span>'.html_safe, diagnostic_path  %>  
+<h4>Tiempo restante: <span id="timer"> </span></h4>
+
+<iframe src="https://docs.google.com/forms/d/1oPVgUqW9RnInWjbo8KvoNofXV7MO6WjUDnIdDqoB9GU/viewform?embedded=true" width="760" height="620" align="center" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+</div>
