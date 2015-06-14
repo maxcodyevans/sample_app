@@ -2330,6 +2330,7 @@ meta.foundation-mq-topbar {
 
 .button-group {
   list-style: none;
+  font-size: 20px;
   margin: 0;
   left: 0; }
   .button-group:before, .button-group:after {
@@ -2338,7 +2339,7 @@ meta.foundation-mq-topbar {
   .button-group:after {
     clear: both; }
   .button-group > li {
-    margin: 0 -2px;
+    margin: 0 15px;
     display: inline-block; }
     .button-group > li > button, .button-group > li .button {
       border-left: 1px solid;

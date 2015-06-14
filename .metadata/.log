@@ -1135,3 +1135,12 @@ Caused by: org.jruby.exceptions.RaiseException: (Errno::EINVAL) =::
 
 !ENTRY org.eclipse.core.jobs 2 2 2015-03-19 14:49:35.572
 !MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.tm.internal.terminal.emulator.VT100TerminalControl$1
+!SESSION 2015-03-21 13:07:03.711 -----------------------------------------------
+eclipse.buildId=3.6.1.201410201044
+java.version=1.7.0_55
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-03-21 16:08:00.832
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.internal.DefaultAnalyticsEventHandler$1

@@ -30,7 +30,8 @@ Rails.application.routes.draw do
   match '/contact', :to => 'users#contact',          via: 'get'
   match '/login',  to: 'sessions#create',         via: 'post'
   match '/logout', to: 'sessions#destroy',     via: 'delete'
-
+  match '/verbalpaa', to: 'users#verbalpaa',     via: 'get'
+    match '/probono', to: 'users#probono',     via: 'get'
 
   
 
